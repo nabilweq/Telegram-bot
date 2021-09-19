@@ -1,3 +1,6 @@
+const express = require('express');
+
+const app = express();
 const { Telegraf }  = require('telegraf');
 const axios = require('axios');
 
@@ -123,3 +126,7 @@ bot.hears('API', ctx => {
 });
 
 bot.launch();
+
+app.listen(3000, ()=> {
+    console.log("server started");
+})
