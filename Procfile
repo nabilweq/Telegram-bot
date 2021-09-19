@@ -1,1 +1,1 @@
-www:node /bot.js
+www:node bot.js
